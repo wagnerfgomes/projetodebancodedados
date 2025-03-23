@@ -8,7 +8,7 @@ CREATE TABLE usuario (
     data_cadastro DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
     email VARCHAR(100) NOT NULL UNIQUE,
     senha_criptografada VARCHAR(255) NOT NULL,
-    tipo_usuario ENUM('cliente', 'administrador') NOT NULL   
+    tipo_usuario ENUM('cliente', 'administrador', 'inativo') NOT NULL   
 );
 
 CREATE TABLE contato_usuario(
